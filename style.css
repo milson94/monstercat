@@ -1,0 +1,45 @@
+
+body{
+    margin: 0; padding: 0;
+    background: url(bg.webp) no-repeat;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    height: 100vh;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .2);
+    backdrop-filter: blur(5px);
+    color: white; 
+    
+}
+
+header .testbox{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to top right, rgba(61, 52, 0, 0.624), rgba(84, 255, 198, 0.059));
+    
+}
+
+h3{
+    z-index: 10000;
+}
+
+header .logo img{
+    z-index: 1000;
+    position: fixed;
+    top: 24px;
+    left: 64px;
+    width: 50px;
+    height: 50px;
+    display: inline;
+}
+
+header .container .middle img{
+    width: 900px;
+    height: 900px;
+}
