@@ -1,35 +1,48 @@
 
 body{
     margin: 0; padding: 0;
+    
+}
+
+.header{
     background: url(bg.webp) no-repeat;
     width: 100%;
     background-size: cover;
     background-position: center;
     overflow: hidden;
     height: 100vh;
-}
 
-header{
+
     width: 100%;
     height: 100vh;
     background-color: rgba(0, 0, 0, .2);
     backdrop-filter: blur(5px);
     color: white; 
     
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
-header .testbox{
+.header .testbox{
     width: 100%;
     height: 100vh;
-    background: linear-gradient(to top right, rgba(61, 52, 0, 0.624), rgba(84, 255, 198, 0.059));
+    background: linear-gradient(to top right, rgba(47, 16, 0, 0.624), rgba(1, 10, 130, 0.059));
     
 }
 
 h3{
-    z-index: 10000;
+    /* z-index: 10000; */
+    color:white;
+    font-size: 5rem;
+    text-shadow: 0 2px 50px black;
+    text-transform: capitalize;
+    display: inline;
+    position: absolute;
 }
 
-header .logo img{
+.header .logo img{
     z-index: 1000;
     position: fixed;
     top: 24px;
@@ -39,7 +52,23 @@ header .logo img{
     display: inline;
 }
 
-header .container .middle img{
-    width: 900px;
-    height: 900px;
+.header .container .middle{
+    background: no-repeat;
+    display: flex;
+    width: 100%;
+}
+
+.header .container .middle img{
+    width: 500px;
+    height: 400px;
+    object-fit: cover;
+    
+}
+
+.header .container .middle .left p{
+    transform: rotate(90deg);
+    position: absolute;
+    top: 90px; 
+    right: 90px;
+    
 }
